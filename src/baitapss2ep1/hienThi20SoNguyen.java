@@ -9,12 +9,12 @@ public class hienThi20SoNguyen {
         int numbers = scanner.nextInt();
         int count = 0;
         int N = 2;
-        while (count < 100) {
+        while (count < 20) {
             boolean isPrime = true;
-            for (int i = 2; i < Math.sqrt(numbers); i++) {
-                if (numbers % i == 0) {
+            for (; N < Math.sqrt(numbers); N++) {
+                if (numbers % N == 0) {
                     isPrime = false;
-//                    break;
+//                    break ;
                 }
             }
             if (isPrime) {
